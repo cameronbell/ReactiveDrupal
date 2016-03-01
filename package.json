@@ -1,0 +1,15 @@
+{
+  "name": "reactive-drupal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yulric Sequeira <yulrics@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "http-server": "0.9.0"
+  }
+}
