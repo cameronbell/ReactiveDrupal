@@ -4,6 +4,39 @@
     <meta charset="UTF-8" />
     <title>Hello React!</title>
 
+    <style type="text/css">
+      #app {
+        padding: 10px;
+      }
+
+      label {
+        width: 20%;
+      }
+
+      input {
+        width: 80%;
+      }
+
+      .box {
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .submit-box {
+        position: fixed;
+        background-color: white;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .questions-box {
+        margin-top: 130px;
+      }
+    </style>
+
     <!-- react stuff -->
     <script src="build/react.js"></script>
     <script src="build/react-dom.js"></script>
@@ -22,7 +55,7 @@
     <script type='text/babel' src='./components/Question.js'></script>
     <script type='text/babel' src='./components/App.js'></script>
   </head>
-  <body style="padding-top: '10px';">
+  <body>
     <div id="app"></div>
     <script type="text/babel">
       ReactDOM.render(

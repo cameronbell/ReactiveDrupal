@@ -5,16 +5,18 @@ Components.App = React.createClass({
         };
     },
     render() {
-        return <div className='container'>
+        return <div>
             <Components.Submit 
                 askQuestion={function(question) {
                     this.setState({questions: this.state.questions.concat(question)});
                 }.bind(this)}/>
-            {
-                this.state.questions.map(function(question) {
-                    return <Components.Question question={question} />;
-                })
-            }
+            <div className='box questions-box'>
+                {
+                    this.state.questions.map(function(question) {
+                        return <Components.Question question={question} />;
+                    })
+                }
+            </div>
         </div>;
     }
 });
